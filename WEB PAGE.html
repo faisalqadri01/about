@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal Qadri's Personal Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: rgb(51, 51, 51); /* Dark grey for text */
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 228, 196, 0.8); /* Light brown with transparency */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            padding-bottom: 80px; /* Extra space for the footer */
+        }
+        h1 {
+            color: rgb(34, 139, 34); /* Forest green for heading */
+            text-align: center;
+            font-size: 36px;
+            font-family: 'Georgia', serif;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: rgb(0, 102, 204); /* Sky blue for paragraph text */
+            text-align: justify;
+        }
+        .highlight {
+            color: rgb(255, 69, 0); /* Orange red for highlights */
+            font-weight: bold;
+            font-style: italic;
+        }
+        a {
+            color: rgb(255, 69, 0); /* Orange red for links */
+            text-decoration: none;
+            border-bottom: 2px solid rgb(255, 69, 0);
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        a:hover {
+            color: rgb(70, 130, 180); /* Steel blue on hover */
+            border-color: rgb(70, 130, 180); /* Steel blue on hover */
+        }
+        .school-name {
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+        }
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        .social-media a:hover {
+            transform: scale(1.1);
+        }
+        .social-media img {
+            width: 30px; /* Smaller size for quicker loading */
+            height: auto;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            color: rgb(51, 51, 51); /* Dark grey for footer text */
+            padding: 10px;
+            background-color: rgba(255, 228, 196, 0.8); /* Light brown with transparency */
+        }
+        .footer a {
+            color: rgb(255, 69, 0); /* Orange red for footer links */
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Faisal Qadri</h1>
+        <p>Hello! My name is <span class="highlight">Faisal Qadri</span>. I am currently a student in <span class="highlight">class 11th</span>, pursuing my studies in the Commerce stream.</p>
+        <p>I am enrolled at <a class="school-name" href="https://www.google.com/search?q=GOVT+MEHJOOR+MEMORIAL+BOYS+HIGHER+SECONDARY+SCHOOL+PULWAMA" target="_blank"><span class="highlight">GOVT MEHJOOR MEMORIAL BOYS HIGHER SECONDARY SCHOOL PULWAMA</span></a>. My passion lies in exploring various aspects of commerce and preparing myself for a future in the business world.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/faisal__qadri/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/100px-Instagram_icon.png" alt="Instagram Logo">
+            </a>
+        </div>
+        <div class="footer">
+            <a href="mailto:faisal.qadri.ca@gmail.com" class="highlight">
+                faisal.qadri.ca@gmail.com
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Array of Kashmir background image URLs
+        const images = [
+            'https://upload.wikimedia.org/wikipedia/commons/a/a8/Beautiful_Scenery_of_Kashmir.jpg'
+        ];
+
+        // Randomly select an image
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+
+        // Apply the background image
+        document.body.style.backgroundImage = `url('${randomImage}')`;
+    </script>
+</body>
+</html>
+
